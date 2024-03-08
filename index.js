@@ -7,6 +7,16 @@ const headerHamMenuCloseBtn = document.querySelector(
 );
 const headerSmallMenuLinks = document.querySelectorAll(".header__sm-menu-link");
 
+window.addEventListener("load", () => {
+	const loader = document.querySelector(".loader");
+
+	loader.classList.add("loader--hidden");
+
+	loader.addEventListener("transitionend", () => {
+		document.body.removeChild(loader);
+	});
+});
+
 hamMenuBtn.addEventListener("click", () => {
 	if (smallMenu.classList.contains("header__sm-menu--active")) {
 		smallMenu.classList.remove("header__sm-menu--active");
@@ -36,27 +46,3 @@ const headerLogoConatiner = document.querySelector(".header__logo-container");
 headerLogoConatiner.addEventListener("click", () => {
 	location.href = "index.html";
 });
-
-
-
-function submitForm() {
-	// Gather form data here
-  const form = document.getElementById("form");
-	const formData = new FormData(form);
-
-	// Use fetch or a library to send POST request with formData
-	fetch("https://formspree.io/f/mayrbybg", {
-		method: "POST",
-		body: JSON.stringify(formData),
-		headers: {
-			"Content-Type": "application/json", // Set appropriate content type
-		},
-	})
-		.then((response) => {
-			// Handle response
-			console.log("Form data sent successfully!");
-		})
-		.catch((error) => {
-			console.error("Error sending form data:", error);
-		});
-}
