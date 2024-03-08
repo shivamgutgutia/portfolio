@@ -652,7 +652,7 @@ textarea {
 .header {
 	position: fixed;
 	width: 100%;
-	z-index: 1000;
+	z-index: 99;
 	background: #000;
 	background: #fff;
 	box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
@@ -924,39 +924,12 @@ textarea {
 	justify-content: center;
 }
 
-.loader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
+#loader {
+	background: #000 url(../assets/gif/preloader.gif) no-repeat center;
+	background-size: 10%;
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #333333;
-	transition: opacity 0.75s, visibility 0.75s;
-}
-
-.loader--hidden {
-	opacity: 100;
-	visibility: hidden;
-}
-
-.loader::after {
-	content: "";
-	width: 75px;
-	height: 75px;
-	border: 15px solid #dddddd;
-	border-top-color: #009578;
-	border-radius: 50%;
-	animation: loading 0.75s ease infinite;
-}
-
-@keyframes loading {
-	from {
-		transform: rotate(0turn);
-	}
-	to {
-		transform: rotate(1turn);
-	}
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
 }

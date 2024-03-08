@@ -1,4 +1,10 @@
 // ---
+var loader = document.getElementById("loader");
+window.addEventListener("load", function () {
+	loader.style.display = "none";
+	this.document.body.removeChild(loader);
+});
+
 const hamMenuBtn = document.querySelector(".header__main-ham-menu-cont");
 const smallMenu = document.querySelector(".header__sm-menu");
 const headerHamMenuBtn = document.querySelector(".header__main-ham-menu");
@@ -6,16 +12,6 @@ const headerHamMenuCloseBtn = document.querySelector(
 	".header__main-ham-menu-close"
 );
 const headerSmallMenuLinks = document.querySelectorAll(".header__sm-menu-link");
-
-window.addEventListener("load", () => {
-	const loader = document.querySelector(".loader");
-
-	loader.classList.add("loader--hidden");
-
-	loader.addEventListener("transitionend", () => {
-		document.body.removeChild(loader);
-	});
-});
 
 hamMenuBtn.addEventListener("click", () => {
 	if (smallMenu.classList.contains("header__sm-menu--active")) {
