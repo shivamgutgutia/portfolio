@@ -48,7 +48,7 @@ body {
 	font-family: sans-serif;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	font-family: "Exo 2", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -414,6 +414,7 @@ textarea {
 	max-width: 60rem;
 	line-height: 1.7;
 	margin-bottom: 3rem;
+	text-align: justify;
 }
 @media only screen and (max-width: 37.5em) {
 	.projects__row-content-desc {
@@ -915,4 +916,10 @@ textarea {
 		opacity: 0;
 		top: 27px;
 	}
+}
+
+.projects-buttons {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
 }

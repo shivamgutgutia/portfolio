@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>MQTT</title>
+		<meta name="description" content="Project page for MQTT" />
+
+		<link rel="stylesheet" href="../css/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__content">
+				<div class="header__logo-container">
+					<div class="header__logo-img-cont">
+						<img
+							src="../assets/png/shivam-gutgutia.png"
+							alt="Shivam Gutgutia Image"
+							class="header__logo-img"
+						/>
+					</div>
+					<span class="header__logo-sub">Shivam Gutgutia</span>
+				</div>
+				<div class="header__main">
+					<ul class="header__links">
+						<li class="header__link-wrapper">
+							<a href="../" class="header__link"> Home </a>
+						</li>
+						<li class="header__link-wrapper">
+							<a href="../#about" class="header__link">About </a>
+						</li>
+						<li class="header__link-wrapper">
+							<a
+								href="../index.html#projects"
+								class="header__link"
+							>
+								Projects
+							</a>
+						</li>
+						<li class="header__link-wrapper">
+							<a href="../#contact" class="header__link">
+								Contact
+							</a>
+						</li>
+					</ul>
+					<div class="header__main-ham-menu-cont">
+						<img
+							src="../assets/svg/ham-menu.svg"
+							alt="hamburger menu"
+							class="header__main-ham-menu"
+						/>
+						<img
+							src="../assets/svg/ham-menu-close.svg"
+							alt="hamburger menu close"
+							class="header__main-ham-menu-close d-none"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="header__sm-menu">
+				<div class="header__sm-menu-content">
+					<ul class="header__sm-menu-links">
+						<li class="header__sm-menu-link">
+							<a href="../"> Home </a>
+						</li>
+
+						<li class="header__sm-menu-link">
+							<a href="../#about"> About </a>
+						</li>
+
+						<li class="header__sm-menu-link">
+							<a href="../#projects"> Projects </a>
+						</li>
+
+						<li class="header__sm-menu-link">
+							<a href="../#contact"> Contact </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="project-cs-hero">
+			<div class="project-cs-hero__content">
+				<h1 class="heading-primary">MQTT - Home Automation</h1>
+				<div class="project-cs-hero__info">
+					<p class="text-primary">
+						The simulation showcases controlling home appliances via
+						a phone using MQTT. Adding sensors enables automatic
+						actions, like lights turning off when empty rooms are
+						detected. It's about making homes smarter with easy
+						phone control and automated features.
+					</p>
+				</div>
+				<div class="project-cs-hero__cta">
+					<a
+						href="https://github.com/shivamgutgutia/MQTT-HomeAutomation"
+						class="btn btn--bg"
+						target="_blank"
+						>Code Link</a
+					>
+				</div>
+			</div>
+		</section>
+		<section class="project-details">
+			<div class="main-container">
+				<div class="project-details__content">
+					<div class="project-details__showcase-img-cont">
+						<img
+							src="./mqtt.png"
+							alt="Project Image"
+							class="project-details__showcase-img"
+						/>
+					</div>
+					<div class="project-details__content-main">
+						<div class="project-details__desc">
+							<h3 class="project-details__content-title">
+								Project Overview
+							</h3>
+							<p class="project-details__desc-para">
+								The simulation demonstrates how you can control
+								home appliances from your phone using a simple
+								protocol called MQTT. It's like using your phone
+								as a remote control for things like lights or
+								thermostats. Moreover, you can make it even
+								better by adding sensors. These sensors can
+								automatically trigger actions, like turning off
+								lights when nobody's in the room or adjusting
+								the temperature based on the weather outside.
+								It's a way to make your home smarter and more
+								convenient using technology.
+							</p>
+							<p class="project-details__desc-para">
+								Our home automation system employs MQTT for
+								efficient communication and control. Rooms,
+								including ROOM1, ROOM2, ROOM3, and HOME,
+								subscribe to designated topics. Devices, such as
+								LAMP (LAMP1, LAMP2), FAN, AC, HUMIDIFIER,
+								COFFEE, and ALL, are controlled using "on" and
+								"off" messages. Topics follow the format
+								&lt;ROOM_NAME&gt;/&lt;DEVICE_NAME&gt; or
+								&lt;ROOM_NAME&gt;/ALL for specific or collective
+								device control within a room. For example,
+								ROOM1/LAMP1 with "on" activates LAMP1 in the
+								first room, while HOME/ALL with "off"
+								deactivates all devices in the entire home. This
+								system ensures flexible and streamlined home
+								automation.
+							</p>
+						</div>
+						<div class="project-details__tools-used">
+							<h3 class="project-details__content-title">
+								Tools Used
+							</h3>
+							<div class="skills">
+								<div class="skills__skill">IoT</div>
+								<div class="skills__skill">
+									Cisco Packet Tracer
+								</div>
+								<div class="skills__skill">MQTT Protocol</div>
+								<div class="skills__skill">Python</div>
+								<div class="skills__skill">Paho - MQTT</div>
+							</div>
+						</div>
+						<div class="project-details__links">
+							<h3 class="project-details__content-title">
+								See Live
+							</h3>
+							<!-- <a
+								href="https://contactify.codechefvit.com"
+								class="btn btn--med btn--theme project-details__links-btn"
+								target="_blank"
+								>Live Link</a
+							> -->
+							<a
+								href="https://github.com/shivamgutgutia/MQTT-HomeAutomation"
+								class="btn btn--med btn--theme-inv project-details__links-btn"
+								target="_blank"
+								>Code Link</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="main-container">
+				<div class="main-footer__upper">
+					<div class="main-footer__row main-footer__row-1">
+						<h2 class="heading heading-sm main-footer__heading-sm">
+							<span>Socials</span>
+						</h2>
+						<div class="main-footer__social-cont">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://linkedin.com/in/shivamgutgutia"
+							>
+								<img
+									class="main-footer__icon"
+									src="../assets/png/linkedin-ico-2.png"
+									alt="icon"
+								/>
+							</a>
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://github.com/shivamgutgutia"
+							>
+								<img
+									class="main-footer__icon"
+									src="../assets/png/github-ico-2.png"
+									alt="icon"
+								/>
+							</a>
+							<!-- <a target="_blank" rel="noreferrer" href="#">
+								<img
+									class="main-footer__icon"
+									src="../assets/png/twitter-ico.png"
+									alt="icon"
+								/>
+							</a> -->
+							<!-- <a target="_blank" rel="noreferrer" href="#">
+								<img
+									class="main-footer__icon"
+									src="../assets/png/yt-ico.png"
+									alt="icon"
+								/>
+							</a> -->
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://instagram.com/shivam.gutgutia"
+							>
+								<img
+									class="main-footer__icon main-footer__icon--mr-none"
+									src="../assets/png/insta-ico-2.png"
+									alt="icon"
+								/>
+							</a>
+						</div>
+					</div>
+					<div class="main-footer__row main-footer__row-2">
+						<h4 class="heading heading-sm text-lt">
+							Shivam Gutgutia
+						</h4>
+						<p class="main-footer__short-desc">
+							Backend developer and Machine learning engineer
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../index.js"></script>
+	</body>
+</html>
